@@ -21,7 +21,6 @@ namespace PV_terrenos
         public void ejecutar(string sql)
         {
             sqCmd = new SQLiteCommand(sql, sqCon);
-
             sqCmd.ExecuteNonQuery();
         }
         ~conexionlite()

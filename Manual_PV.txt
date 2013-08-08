@@ -1,0 +1,65 @@
+		PV de Terreno
+
+		
+		***ANALISIS***
+		
+Este es un Programa que se encargara de llevar el control 
+de Terrenos de el Doctor de Hugo.
+
+Sus funciones principales son:
+	
+	-Llevar el control de los Terrenos disponibles y ocupados
+	-Guardar los clientes, vendedores
+	-Almacenar el Registro de los Pagos que el Comprador ha realizado
+	-Generar reportes de Pagos/Contratos, Disponibilidades, etc...
+
+Los terrenos se catalogan de la siguiente manera
+
+	Predio:Que es el conjunto de Manzanas y lotes. 
+		   Un Predio puede estas constituido tanto de manzanas como de lotes
+	
+	Manzana: Es un conjunto de lotes. Varias manzanas juntas conforman un predio.
+	
+	Lote: Lote es la minima division de un predio. Varios lotes conforman una manzana o un predio.
+
+Para almacenar un predio se necesita saber el dueño, el numero de Catastro, su nombre y coordenadas (Propuesta).
+
+La manzana no cuenta mas que con un numero consecutivo propio y el predio al que pertenece.
+	
+Al momento de almacenar un lote, se requiere conocer con cuales otros lotes colinda (NORTE,SUR,ESTE,OESTE).
+Se necesita saber a que proveedor pertenece.
+
+Los datos de los clientes(compradores) son:
+	-Nombre
+	-Domicilio
+	-Estado de residencia
+	-Estado Civil
+	-Ocupacion
+	-Beneficiario
+	-Telefono
+	-Telefono 2 (opcional)
+	
+Se tendrá un ID con el que se tendrá la relacion entre el cliente y el/los lotes que pertenece.
+	
+Tambien se almacenaran los datos de los Vendedores, que son:
+	-Nombre
+	-Comision (por porecentaje?)
+
+
+	***Evaluacion de Procesos***
+	
+	
+	
+	***Entorno de Desarrollo***
+	
+	
+	***Interfaz Gráfica***
+	
+	
+	***Codificacion***
+	
+
+
+
+
+
