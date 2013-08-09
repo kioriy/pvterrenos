@@ -1,7 +1,6 @@
 		PV de Terreno
-
 		
-		***ANALISIS***
+***ANALISIS***
 		
 Este es un Programa que se encargara de llevar el control 
 de Terrenos de el Doctor de Hugo.
@@ -24,10 +23,10 @@ Los terrenos se catalogan de la siguiente manera
 
 Para almacenar un predio se necesita saber el dueño, el numero de Catastro, su nombre y coordenadas (Propuesta).
 
-La manzana no cuenta mas que con un numero consecutivo propio y el predio al que pertenece.
+La manzana no cuenta mas que con dos numeros, uno consecutivo, uno propio y el predio al que pertenece.
 	
-Al momento de almacenar un lote, se requiere conocer con cuales otros lotes colinda (NORTE,SUR,ESTE,OESTE).
-Se necesita saber a que proveedor pertenece.
+Al momento de almacenar un lote, se requiere conocer con cuales otros lotes colinda (NORTE,SUR,ESTE,OESTE) y las medidas
+de cada lado.
 
 Los datos de los clientes(compradores) son:
 	-Nombre
@@ -45,15 +44,68 @@ Tambien se almacenaran los datos de los Vendedores, que son:
 	-Nombre
 	-Comision (por porecentaje?)
 
+El doctor ahorita tiene dos sucursales donde la genta llega y le paga las mensualidades, abarcando
+un par de zonas. Los encargados, hacen todo a mano y cada semana llegan con el doctor con el monton 
+de recibos.
 
-	***Evaluacion de Procesos***
+Las comisiones que se les da a los vendedores son variables. A veces son por porcentaje, otras veces son
+fijas, pero dependen completamente de el Doctor.
+
+Se llevará control de los pagos mensuales, así como de los "moradores", que es el termino que se utiliza
+para definir a un comprador con pagos atrasados. Para dichos sujetos, se les aplicará un interes (del 6%
+por lo general), el cual deberá ir definido en el contrato. Al momento de mostrar la informacion de los
+pagos, deberán distinguirse los compradores que están al corriente y los que no.
+
+
+***Evaluacion de Procesos***
+
+		----Manejo de datos----
+		
+	Los siguientes puntos están catalogados de manera que se puedan identificar que punto es mas critico
+	al momento de usarse. Existen dos tipos de niveles: 
+		-Básico: que se refiere a que cualquier usuario puede acceder a ellos.
+		-Avanzado: se refiere a que SOLO el Supervisor (en este caso el Doctor) puede hacer uso de ello.
+				
+	 Datos		|	Captura			|  Modificacion		|   Impresion		|   Eliminacion
+	Clientes	|(nivel básico)		| (nivel básico)	| (nivel básico)	|  (nivel avanzado) //quizá sea muuuuuy poco utilizado, pero puede suceder
+	Terrenos	|(nivel básico)		| (nivel básico)	| (nivel básico)	|  (nivel avanzado) //probablemente no exista eliminacion
+	Cobranzas	|(nivel básico)		| (nivel avanzado)	| (nivel básico)	|  (nivel avanzado) //quizá sea muuuuuy poco utilizado, pero puede suceder
+	Contratos	|(nivel avanzado)	| (nivel avanzado)	| (nivel avanzado)	|  (nivel avanzado) //probablemente no exista eliminacion
 	
-	
+
+		---Envio de Cobranzas (Sucursal -> Doc)---
+		
+Se propuso que la informacion de las cobranzas se enviara cada X tiempo en un archivo por medio de
+correo electronico y que al recibirlo, el Dr. pueda cargarlo facilmente en el sistema.
+
+//Archivo de Propuesta para la base de datos está adjunto
+
+En cuanto a reportes, se proponen que sean guardados en formato PDF.
 	
 	***Entorno de Desarrollo***
-	
+
+El sistema se planea programar en C# (Software) y los reportes usando de Java (iReport).
+Para la base de datos se pretende usar SQLite, debido a que este no requiere un motor robusto para ser manejada, como SQL o Postgres.
+
 	
 	***Interfaz Gráfica***
+	
+Dentro de la interfaz grafica se propone tener al menos una ventana para cada uno del conjunto de datos
+a utilizar:
+
+	-Clientes: Aqui se podrán consultar los datos generales del cliente, como su domicilio, estado de residencia, telefonos, etc..
+			   Igualmente se podrán dar de Alta y modificar dichos datos desde la misma ventana.
+			   
+	-Terrenos: Al igual que clientes, debera poderse agregar, modificar, consultar y posiblemente eliminar el registro de los
+			   terrenos. (DUDA: Se capturarán los Predios aqui mismo, o esos serán dentro de un menú/frame diferente?)
+			   
+	-Cobranzas: Deberán de poderse visualizar todas las cuentas pendientes y saldadas de los clientes. Debe de ser posible
+				poder identificar si un cliente está atrasado con sus pagos y/o en cuanto tiempo está por cambiar su estatus
+				a "moratorio". Igualmente deberá ser posible capturar, modificar y eliminar registros desde esta ventana.
+	
+	-Contrato/Venta: En este frame se capturarán las ventas de los lotes. Asi mismo, aqui se deberá hacer el calculo de los abonos de las
+					 mensualidades, dependiendo de la cantidad de meses que se acuerde.(DUDA: Se deberán mostrar los contratos realizados desde aquí?)
+	
 	
 	
 	***Codificacion***
