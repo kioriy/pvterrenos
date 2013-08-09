@@ -1,61 +1,60 @@
 
 	PRIMERA PARTE DATOS GENERALES.
 	{
-		1.- Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" }
-		2.- Fecha contrato { "X" dias del mes "Y" }
-		3.- El comprador { SR. PEKAS ELIZALDE }
-	
+		1.- Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" } [LOTE][MANZANA]
+		2.- Fecha contrato { "X" dias del mes "Y" } [???]
+		3.- El comprador { SR. PEKAS ELIZALDE } [COMPRADOR]
 	}
 	
 	SEGUNDA PARTE DECLARACIONES.
-	{	4.- Ubicacion { Al poniente de coyula }
-		5.- Municipio { Tonala, GDL }
-		6.- Propietario anterior { MR PEPENACA RODRIGUEZ }
-		7.- Superficie numero { 40,000 }
-		8.- Superficie palabras { CUARENTA MIL METROS CUADRADOS }
-		9.- Registro publico #documento { 35 }
-		10.- Registro publico #orden { 26089809 }
-		11.- Registro publico #libro { 566 }
-		12.- Registro publico #seccionlibro { primera }
-		13.- Registro publico #deOficina { primera, segunda }
-		14.- Registro publico #folio1 { 11 }
-		15.- Registro publico #folio2 { 15 }
-		16.- Registro publico #boletaPago { I-7563728 }
-		17.- Registro publico FechaRegistro { 21 de Agosto del 1999 }
-		18.- Catastro { Tonala }
-		19.- Catastro #cuenta { ROO22434 }
-		20.- Catastro Nombre { EVA POPOCHIS SOLIS }
+	{	4.- Ubicacion { Al poniente de coyula } [???]
+		5.- Municipio { Tonala, GDL } [???]
+		6.- Propietario anterior { MR PEPENACA RODRIGUEZ } [???]
+		7.- Superficie numero { 40,000 } [???]
+		8.- Superficie palabras { CUARENTA MIL METROS CUADRADOS } [???]
+		9.- Registro publico #documento { 35 } [???]
+		10.- Registro publico #orden { 26089809 } [???]
+		11.- Registro publico #libro { 566 } [???]
+		12.- Registro publico #seccionlibro { primera } [???]
+		13.- Registro publico #deOficina { primera, segunda } [???]
+		14.- Registro publico #folio1 { 11 } [???]
+		15.- Registro publico #folio2 { 15 } [???]
+		16.- Registro publico #boletaPago { I-7563728 } [???]
+		17.- Registro publico FechaRegistro { 21 de Agosto del 1999 } [???]
+		18.- Catastro { Tonala } [???]
+		19.- Catastro #cuenta { ROO22434 } [PREDIO]
+		20.- Catastro Nombre { EVA POPOCHIS SOLIS } [???]
 		
-		21.- Compra Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" }
-		22.- Superficie Lote # { 9,000 }
-		23.- Superficie Lote Palabra { NUEVE MIL METROS CUADRADOS }
-		24.- Colidancia NORTE { 15.00 metros con lote #3}
-		25.- Colidancia SUR { 15.00 metros con lote #5}
-		26.- Colidancia ORIENTE { 15.00 metros con propiedad privada}
-		27.- Colidancia PONIENTE { 15.00 metros con calle}
+		21.- Compra Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" } [LOTE][MANZANA]
+		22.- Superficie Lote # { 9,000 } [LOTE]
+		23.- Superficie Lote Palabra { NUEVE MIL METROS CUADRADOS } [???]
+		24.- Colidancia NORTE { 15.00 metros con lote #3} [LOTE]
+		25.- Colidancia SUR { 15.00 metros con lote #5} [LOTE]
+		26.- Colidancia ORIENTE { 15.00 metros con propiedad privada} [LOTE]
+		27.- Colidancia PONIENTE { 15.00 metros con calle} [LOTE]
 		
-		28.- Nacionalidad comprador { Mexicano }
+		28.- Nacionalidad comprador { Mexicano } [???]
 		29.- Edad { Mayor de Edad }//
-		30.- Estado Civil { Casado }
-		31.- Profesion { Albañil }
-		32.- Lugar nacimiento { Leon, Guanajuato }
-		33.- Domicilio { Pedro popochis #3445 }
-		34.- Colonia { PUERTA DE HIERRO }
-		35.- Municipio, estado. { Tonala, Jalisco}
+		30.- Estado Civil { Casado } [COMPRADOR]
+		31.- Profesion { Albañil } [???]
+		32.- Lugar nacimiento { Leon, Guanajuato } [???]
+		33.- Domicilio { Pedro popochis #3445 } [COMPRADOR]
+		34.- Colonia { PUERTA DE HIERRO } [COMPRADOR]
+		35.- Municipio, estado. { Tonala, Jalisco} [COMPRADOR]
 	}
 	
 	TERCERA PARTE "CLAUSULAS"
 	{
-		36.- Precio Compra-venta # { 230,000 }
-		37.- Precio compra-venta LETRA { DOSCIENTOS TREINTA MIL PESOS }
-		38.- #numeroMensualidades { 100 }
-		38.- Valor Mensualidades { 2,300 }
-		39.- Fecha Primer Mensualidad { 21 de Junio del 2003}
-		40.- Nombre comprador { C. RAUL POPO }
-		41.- Nombre comprador { C. RAUL POPO }
-		42.- Nombre comprador { C. RAUL POPO }
-		43.- 3 Mensualidades { 6,900 }
-		44.- %Interes cargo { 138.00 }
-		45.- Nombre Beneficiario { PEPE PICA PAPAS }
-		46.- Nombre Comprador { C. RAUL POPO }
+		36.- Precio Compra-venta # { 230,000 } [??? POSIBLEMENTE COSTO EN LOTE]
+		37.- Precio compra-venta LETRA { DOSCIENTOS TREINTA MIL PESOS } [???]
+		38.- #numeroMensualidades { 100 } [VENTA]
+		38.- Valor Mensualidades { 2,300 } [CUENTAS POR COBRAR POSIBLEMENTE]
+		39.- Fecha Primer Mensualidad { 21 de Junio del 2003} [VENTA]
+		40.- Nombre comprador { C. RAUL POPO } [COMPRADOR]
+		41.- Nombre comprador { C. RAUL POPO }    ''
+		42.- Nombre comprador { C. RAUL POPO }    ''
+		43.- 3 Mensualidades { 6,900 }  [???]
+		44.- %Interes cargo { 138.00 }  [???]
+		45.- Nombre Beneficiario { PEPE PICA PAPAS } [COMPRADOR]
+		46.- Nombre Comprador { C. RAUL POPO } [COMPRADOR]
 	}
