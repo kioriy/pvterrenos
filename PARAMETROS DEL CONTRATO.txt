@@ -1,43 +1,43 @@
 
 	PRIMERA PARTE DATOS GENERALES.
 	{
-		1.- Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" } [LOTE][MANZANA]
-		2.- Fecha contrato { "X" dias del mes "Y" } [???]
-		3.- El comprador { SR. PEKAS ELIZALDE } [COMPRADOR]
+		1.- Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" } [LOTE][MANZANA] *DONE
+		2.- Fecha contrato { "X" dias del mes "Y" } [???] *DONE (en venta)
+		3.- El comprador { SR. PEKAS ELIZALDE } [COMPRADOR] *DONE
 	}
 	
 	SEGUNDA PARTE DECLARACIONES.
 	{	4.- Ubicacion { Al poniente de coyula } [???]
-		5.- Municipio { Tonala, GDL } [???]
-		6.- Propietario anterior { MR PEPENACA RODRIGUEZ } [???]
-		7.- Superficie numero { 40,000 } [???]
-		8.- Superficie palabras { CUARENTA MIL METROS CUADRADOS } [???]
-		9.- Registro publico #documento { 35 } [???]
-		10.- Registro publico #orden { 26089809 } [???]
-		11.- Registro publico #libro { 566 } [???]
-		12.- Registro publico #seccionlibro { primera } [???]
-		13.- Registro publico #deOficina { primera, segunda } [???]
-		14.- Registro publico #folio1 { 11 } [???]
-		15.- Registro publico #folio2 { 15 } [???]
-		16.- Registro publico #boletaPago { I-7563728 } [???]
-		17.- Registro publico FechaRegistro { 21 de Agosto del 1999 } [???]
-		18.- Catastro { Tonala } [???]
+		5.- Municipio { Tonala, GDL } [???] *DONE (en predio)
+		6.- Propietario anterior { MR PEPENACA RODRIGUEZ } [???] *DONE (en predio)
+		7.- Superficie numero { 40,000 } [???] *DONE (en predio)
+		8.- Superficie palabras { CUARENTA MIL METROS CUADRADOS } [???] *Programado
+		9.- Registro publico #documento { 35 } [???] *DONE (en RegistroPublicoPredio)
+		10.- Registro publico #orden { 26089809 } [???] *DONE (en RegistroPublicoPredio)
+		11.- Registro publico #libro { 566 } [???] *DONE (en RegistroPublicoPredio)
+		12.- Registro publico #seccionlibro { primera } [???] *DONE (en RegistroPublicoPredio)
+		13.- Registro publico #deOficina { primera, segunda } [???] *DONE (en RegistroPublicoPredio)
+		14.- Registro publico #folio1 { 11 } [???] *DONE (en RegistroPublicoPredio)
+		15.- Registro publico #folio2 { 15 } [???] *DONE (en RegistroPublicoPredio)
+		16.- Registro publico #boletaPago { I-7563728 } [???]*DONE (en RegistroPublicoPredio)
+		17.- Registro publico FechaRegistro { 21 de Agosto del 1999 } [???] *DONE (en RegistroPublicoPredio)
+		18.- Catastro { Tonala } [???] *DONE (en Predio)
 		19.- Catastro #cuenta { ROO22434 } [PREDIO]
-		20.- Catastro Nombre { EVA POPOCHIS SOLIS } [???]
+		20.- Catastro Nombre { EVA POPOCHIS SOLIS } [???] *DONE (en Predio)
 		
 		21.- Compra Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" } [LOTE][MANZANA]
 		22.- Superficie Lote # { 9,000 } [LOTE]
-		23.- Superficie Lote Palabra { NUEVE MIL METROS CUADRADOS } [???]
+		23.- Superficie Lote Palabra { NUEVE MIL METROS CUADRADOS } [???] *Programado
 		24.- Colidancia NORTE { 15.00 metros con lote #3} [LOTE]
 		25.- Colidancia SUR { 15.00 metros con lote #5} [LOTE]
 		26.- Colidancia ORIENTE { 15.00 metros con propiedad privada} [LOTE]
 		27.- Colidancia PONIENTE { 15.00 metros con calle} [LOTE]
 		
-		28.- Nacionalidad comprador { Mexicano } [???]
+		28.- Nacionalidad comprador { Mexicano } [???] *Mexicano DEFALULT
 		29.- Edad { Mayor de Edad }//
 		30.- Estado Civil { Casado } [COMPRADOR]
-		31.- Profesion { Albañil } [???]
-		32.- Lugar nacimiento { Leon, Guanajuato } [???]
+		31.- Profesion { Albañil } [???] *DONE (en comprador como "ocupacion")
+		32.- Lugar nacimiento { Leon, Guanajuato } [???] *DONE (en comprador)
 		33.- Domicilio { Pedro popochis #3445 } [COMPRADOR]
 		34.- Colonia { PUERTA DE HIERRO } [COMPRADOR]
 		35.- Municipio, estado. { Tonala, Jalisco} [COMPRADOR]
@@ -45,16 +45,16 @@
 	
 	TERCERA PARTE "CLAUSULAS"
 	{
-		36.- Precio Compra-venta # { 230,000 } [??? POSIBLEMENTE COSTO EN LOTE]
-		37.- Precio compra-venta LETRA { DOSCIENTOS TREINTA MIL PESOS } [???]
+		36.- Precio Compra-venta # { 230,000 } [EN LOTE]
+		37.- Precio compra-venta LETRA { DOSCIENTOS TREINTA MIL PESOS } [???] *Programado
 		38.- #numeroMensualidades { 100 } [VENTA]
-		38.- Valor Mensualidades { 2,300 } [CUENTAS POR COBRAR POSIBLEMENTE]
+		38.- Valor Mensualidades { 2,300 } [CUENTAS POR COBRAR]
 		39.- Fecha Primer Mensualidad { 21 de Junio del 2003} [VENTA]
 		40.- Nombre comprador { C. RAUL POPO } [COMPRADOR]
 		41.- Nombre comprador { C. RAUL POPO }    ''
 		42.- Nombre comprador { C. RAUL POPO }    ''
 		43.- 3 Mensualidades { 6,900 }  [???]
-		44.- %Interes cargo { 138.00 }  [???]
+		44.- %Interes cargo { 138.00 }  [???] *FIjo de 6%
 		45.- Nombre Beneficiario { PEPE PICA PAPAS } [COMPRADOR]
 		46.- Nombre Comprador { C. RAUL POPO } [COMPRADOR]
 	}
