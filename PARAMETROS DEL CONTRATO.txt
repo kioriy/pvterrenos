@@ -1,11 +1,10 @@
-
-	PRIMERA PARTE DATOS GENERALES.
+﻿PRIMERA PARTE DATOS GENERALES.
 	{
 		1.- Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" } [LOTE][MANZANA] *DONE
 		2.- Fecha contrato { "X" dias del mes "Y" } [???] *DONE (en venta)
 		3.- El comprador { SR. PEKAS ELIZALDE } [COMPRADOR] *DONE
 	}
-	
+
 	SEGUNDA PARTE DECLARACIONES.
 	{	4.- Ubicacion { Al poniente de coyula } [???]
 		5.- Municipio { Tonala, GDL } [???] *DONE (en predio)
@@ -24,7 +23,7 @@
 		18.- Catastro { Tonala } [???] *DONE (en Predio)
 		19.- Catastro #cuenta { ROO22434 } [PREDIO]
 		20.- Catastro Nombre { EVA POPOCHIS SOLIS } [???] *DONE (en Predio)
-		
+
 		21.- Compra Lote#, Manzana#  { LOTE No. "X" MANZANA No. "Y" } [LOTE][MANZANA]
 		22.- Superficie Lote # { 9,000 } [LOTE]
 		23.- Superficie Lote Palabra { NUEVE MIL METROS CUADRADOS } [???] *Programado
@@ -32,7 +31,7 @@
 		25.- Colidancia SUR { 15.00 metros con lote #5} [LOTE]
 		26.- Colidancia ORIENTE { 15.00 metros con propiedad privada} [LOTE]
 		27.- Colidancia PONIENTE { 15.00 metros con calle} [LOTE]
-		
+
 		28.- Nacionalidad comprador { Mexicano } [???] *Mexicano DEFALULT
 		29.- Edad { Mayor de Edad }//
 		30.- Estado Civil { Casado } [COMPRADOR]
@@ -42,7 +41,7 @@
 		34.- Colonia { PUERTA DE HIERRO } [COMPRADOR]
 		35.- Municipio, estado. { Tonala, Jalisco} [COMPRADOR]
 	}
-	
+
 	TERCERA PARTE "CLAUSULAS"
 	{
 		36.- Precio Compra-venta # { 230,000 } [EN LOTE]

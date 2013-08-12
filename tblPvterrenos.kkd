@@ -99,20 +99,16 @@
       </lista-columnas>
     </item>
     <item type="modelo-tabla" id="{15af7fda-f01c-4882-8bf2-79b7e89f3fb8}">
-      <nombre>CUENTAS POR COBRAR</nombre>
+      <nombre>PAGOS</nombre>
       <posicion>
         <x>-226</x>
         <y>-78</y>
       </posicion>
       <lista-columnas>
-        <columna llaveUnica="1" llaveprimaria="0" nulo="0" nombre="id_cxc" id="{e69f7d0f-2ac7-4883-b05b-5f5328717e9c}" tipoDato="TEXT" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="id_comprador" id="{fb9b4f53-c7ba-4a95-99a8-a902c39ee4f0}" tipoDato="TEXT" notas=""/>
+        <columna llaveUnica="1" llaveprimaria="0" nulo="0" nombre="id_pago" id="{e69f7d0f-2ac7-4883-b05b-5f5328717e9c}" tipoDato="TEXT" notas=""/>
         <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="id_venta" id="{d1538f42-0703-4619-91fc-ee102aedf0a9}" tipoDato="TEXT" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="plazos" id="{393084a7-5c5a-486a-97a4-0d39a02533fb}" tipoDato="INTEGER" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="total" id="{9ba8d94d-4a7a-4ad1-8d5d-938dec554add}" tipoDato="FLOAT" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="saldo" id="{39eb3a84-58b2-4f40-83c6-9664cbc0d860}" tipoDato="" notas=""/>
         <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="prox_pago" id="{abcbc5b8-c068-447c-8469-0fdf397ca23e}" tipoDato="" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="diasatrasados" id="{1d0b238b-f999-4a97-911e-668b4764e252}" tipoDato="TEX" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="meses_pagados" id="{58f745b6-2c51-4a6f-be72-bcdd422ebce5}" tipoDato="" notas=""/>
       </lista-columnas>
     </item>
     <item type="modelo-tabla" id="{d57afd89-92b4-4399-8b33-1d89dd1c3e33}">
@@ -132,18 +128,19 @@
       </lista-columnas>
     </item>
     <item type="modelo-tabla" id="{8931a96a-7f44-4693-8f4c-1e8d00b15369}">
-      <nombre>DETALLE_CXC</nombre>
+      <nombre>DET_PAGOS</nombre>
       <posicion>
         <x>-40</x>
         <y>-71</y>
       </posicion>
       <lista-columnas>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="id_cxc" id="{0c0c5d66-bc09-4655-abd6-8f08cd030a81}" tipoDato="TEXT" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="id_vendedor" id="{759cfcaa-a252-46d8-8e6a-6f073d88ed2c}" tipoDato="TEXT" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="abono" id="{beec7b71-84c0-4278-b65a-913553686e9f}" tipoDato="FLOAT" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="fechalimite" id="{d926a8c2-38a0-429d-a757-3fdbe46217e2}" tipoDato="TEXT" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="atraso" id="{2cb71cd7-f27d-4bcd-8dee-ef89275746dd}" tipoDato="" notas=""/>
-        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="status" id="{adf5d515-ddb3-434c-b08e-17131755d75c}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="id_pago" id="{d0cf6ba8-9001-4feb-828d-09b5d5ff7fbf}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="tipo_pago" id="{7b0d8c6f-674d-4473-803d-03096da73849}" tipoDato="" notas="Puede ser Saldo Inicial,Abono o Adelanto"/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="fecha" id="{2bbf8530-ba63-4750-b869-83eea39cede0}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="cantidad" id="{ddfd09bf-7f60-42ff-9e5a-ec9a7d6012b6}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="id_vendedor" id="{f287b757-be47-4b00-9e91-56a4e0efa904}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="1" nombre="t_adelanto" id="{ebe9419e-2710-41c6-811f-3a42a9d521f5}" tipoDato="" notas="puede ser de Inicio,Recalcular mensualidad o final"/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="1" nombre="moratorio" id="{15bb32a5-de11-4ba2-9ea1-381eecc18d21}" tipoDato="TEXT" notas="&quot;abono por X atrasados&quot;"/>
       </lista-columnas>
     </item>
     <item type="modelo-tabla" id="{31d015a6-625f-4f95-babe-148f4e2bbbf0}">
@@ -209,6 +206,20 @@
         <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="folio2" id="{292ace99-2387-473b-ac5a-724b4199c2cd}" tipoDato="TEXT" notas=""/>
         <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="boleta" id="{e7cf1065-c911-4d84-8cd7-22e5abd02bf5}" tipoDato="TEXT" notas=""/>
         <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="fecha_reg" id="{6aab76a1-9377-4c5f-a4ae-e8333e284e13}" tipoDato="TEXT" notas=""/>
+      </lista-columnas>
+    </item>
+    <item type="modelo-tabla" id="{7eceee74-4335-471a-afae-d3e14e2ff839}">
+      <nombre>PAGO_MORATORIO</nombre>
+      <posicion>
+        <x>-366</x>
+        <y>-54</y>
+      </posicion>
+      <lista-columnas>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="id_pago" id="{11aafa37-03d9-42bb-ad6c-88c8ed85d456}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="fecha_mora" id="{961a79a8-348e-4d52-ad3a-bc5b715c856c}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="meses_atras" id="{75ed76a9-b988-4540-9a81-400790f26609}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="interes" id="{d77406f9-01e3-40d7-b1df-b6f52081e08d}" tipoDato="" notas=""/>
+        <columna llaveUnica="0" llaveprimaria="0" nulo="0" nombre="fecha_pagado" id="{077f33ea-50b4-47de-aee8-1df2481757e9}" tipoDato="" notas=""/>
       </lista-columnas>
     </item>
     <item type="modelo-relacion" id="{749931cc-5bae-4e90-9574-ef8ed7c2e0df}">
@@ -334,7 +345,7 @@
       </inicio>
       <final>
         <posicion>
-          <x>-184</x>
+          <x>-190.333</x>
           <y>-78</y>
         </posicion>
         <angulo>90</angulo>
@@ -346,8 +357,8 @@
     <item type="modelo-relacion" id="{18ffbad4-e676-474a-b65d-9cec4fee2b43}">
       <inicio>
         <posicion>
-          <x>-100</x>
-          <y>-16</y>
+          <x>-119</x>
+          <y>-42</y>
         </posicion>
         <angulo>0</angulo>
         <cardinalidad>Uno</cardinalidad>
@@ -357,7 +368,7 @@
       <final>
         <posicion>
           <x>-40</x>
-          <y>-22</y>
+          <y>-15.5</y>
         </posicion>
         <angulo>180</angulo>
         <cardinalidad>Muchos</cardinalidad>
@@ -378,7 +389,7 @@
       </inicio>
       <final>
         <posicion>
-          <x>-142</x>
+          <x>-154.667</x>
           <y>-78</y>
         </posicion>
         <angulo>90</angulo>
@@ -444,8 +455,8 @@
       </inicio>
       <final>
         <posicion>
-          <x>49.6242</x>
-          <y>-22.2328</y>
+          <x>50</x>
+          <y>-15.5</y>
         </posicion>
         <angulo>0</angulo>
         <cardinalidad>Muchos</cardinalidad>
@@ -561,6 +572,28 @@
         <cardinalidad>Uno</cardinalidad>
         <cardinalidadLinea>Debe</cardinalidadLinea>
         <owner>{8a08e93c-bcbe-45d7-a536-5048bb98f778}</owner>
+      </final>
+    </item>
+    <item type="modelo-relacion" id="{4de8b901-d5a7-4a38-a39d-7853e82abdca}">
+      <inicio>
+        <posicion>
+          <x>-226</x>
+          <y>-42</y>
+        </posicion>
+        <angulo>180</angulo>
+        <cardinalidad>Uno</cardinalidad>
+        <cardinalidadLinea>Puede</cardinalidadLinea>
+        <owner>{15af7fda-f01c-4882-8bf2-79b7e89f3fb8}</owner>
+      </inicio>
+      <final>
+        <posicion>
+          <x>-258</x>
+          <y>-11.5</y>
+        </posicion>
+        <angulo>0</angulo>
+        <cardinalidad>Muchos</cardinalidad>
+        <cardinalidadLinea>Debe</cardinalidadLinea>
+        <owner>{7eceee74-4335-471a-afae-d3e14e2ff839}</owner>
       </final>
     </item>
   </lista-item>
